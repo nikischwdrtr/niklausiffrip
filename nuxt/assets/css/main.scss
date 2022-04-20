@@ -1,0 +1,37 @@
+@font-face {
+    font-family: WerkRegular;
+	src: url("@/assets/fonts/WerkGrotesk-Regular.woff");
+}
+@font-face {
+	font-family: WerkLight;
+	src: url("@/assets/fonts/WerkGrotesk-Light.woff");
+}
+@font-face {
+	font-family: WerkMedium;
+	src: url("@/assets/fonts/WerkGrotesk-Medium.woff");
+}
+@font-face {
+	font-family: WerkBold;
+	src: url("@/assets/fonts/WerkGrotesk-Bold.woff");
+}
+@font-face {
+	font-family: GangsterLight;
+	src: url("@/assets/fonts/GangsterLight.otf");
+}
+@font-face {
+	font-family: GangsterRegular;
+	src: url("@/assets/fonts/GangsterRegular.otf");
+}
+@font-face {
+	font-family: GangsterBold;
+	src: url("@/assets/fonts/GangsterBold.otf");
+}
+@font-face {
+	font-family: Business;
+	src: url("@/assets/fonts/BusinessHistory.woff");
+}
+a, p {
+	font-family: WerkMedium;
+	text-decoration: none;
+	color: black;
+}
