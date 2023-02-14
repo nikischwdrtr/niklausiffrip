@@ -1,21 +1,21 @@
 <template>
   <div class="index-container">
     <RIP />
-    <section>
+    <div class="index-section">
       <div class="index-archive">
         <div>
           <img src="/images/DSCF1511.jpg" loading="eager" />
         </div>
       </div>
-    </section>
+    </div>
     <template  v-for="(index, i) in index">
-      <section>
+      <div class="index-section">
         <div class="index-archive">
           <div>
             <img :src="index.src" loading="lazy" />
           </div>
         </div>
-      </section>
+      </div>
     </template>
   </div>
 </template>
@@ -46,7 +46,7 @@
   width: 100vw;
   height: 100vh;
 }
-section {
+.index-section {
   position: relative;
   width: 100%;
   height: 100%;
