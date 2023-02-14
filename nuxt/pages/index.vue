@@ -4,7 +4,7 @@
     <section>
       <div class="index-archive">
         <div>
-          <img src="images/DSCF1511.jpg" class="lazyload" />
+          <img src="images/DSCF1511.jpg" loading="eager" />
         </div>
       </div>
     </section>
@@ -12,7 +12,7 @@
       <section>
         <div class="index-archive">
           <div>
-            <img :src="index.src" class="lazyload" />
+            <img :src="index.src" loading="lazy" />
           </div>
         </div>
       </section>
