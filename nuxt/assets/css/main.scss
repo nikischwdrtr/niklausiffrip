@@ -103,3 +103,31 @@ p {
 		filter: blur(0.8rem);
 	}
 }
+@media (max-width: 1200px) {
+	h1 {
+		font-size: 8vw;
+	}
+	h2 {
+		font-size: 4vw;
+	}
+	a {
+		font-size: 4vw;
+	}
+	p {
+		font-size: 4vw;
+	}
+}
+@media (max-width: 600px) {
+	h1 {
+		font-size: 14vw;
+	}
+	h2 {
+		font-size: 8vw;
+	}
+	a {
+		font-size: 8vw;
+	}
+	p {
+		font-size: 8vw;
+	}
+}

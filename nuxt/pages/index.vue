@@ -3,13 +3,17 @@
     <RIP />
     <section>
       <div class="index-archive">
-        <div :style="{'background-image': 'url(images/DSCF1511.jpg)'}"></div>
+        <div>
+          <img src="images/DSCF1511.jpg" class="lazyload" />
+        </div>
       </div>
     </section>
     <template  v-for="(index, i) in index">
       <section>
         <div class="index-archive">
-          <div :style="{'background-image': 'url(' + index.src + ')'}"></div>
+          <div>
+            <img :src="index.src" class="lazyload" />
+          </div>
         </div>
       </section>
     </template>
@@ -17,9 +21,9 @@
 </template>
 
 <script setup>
-  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
-  console.log('♕ niki is king ♕')
-  console.log('♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱')
+  console.log('%c ♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱','background: #ffffff; color: #00FF00')
+  console.log('%c ♕ rip rip rip ♕','background: #ffffff; color: #00FF00')
+  console.log(' %c♱♱♱♱♱♱♱♱♱♱♱♱♱♱♱','background: #ffffff; color: #00FF00')
   const {data: indexP } = await useFetch('https://raw.githubusercontent.com/nikischwdrtr/niklausiffch_api/main/rip.json')
   const index = JSON.parse(indexP.value)
   const router = useRouter()
@@ -62,13 +66,23 @@ section {
     left: 50%;
     width: 40%;
     height: 90%;
-    background-size: 80% auto;
-    background-position: center center;
-    background-repeat: no-repeat;
     transform: translateZ(0) translateX(-50%) translateY(-50%);
     will-change: transform;
+    img {
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      max-width: 100%;
+      max-height: 90%;
+    }
   }
 }
 @media (max-width: 600px) {
+  .index-archive {
+    div {
+      width: 75%;
+    }
+  }
 }
 </style>
