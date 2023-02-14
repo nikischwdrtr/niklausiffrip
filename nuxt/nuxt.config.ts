@@ -5,6 +5,7 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
       ],
+      script: [{ src: '/script/lazysizes.js' }],
     },
   },
   modules: [
