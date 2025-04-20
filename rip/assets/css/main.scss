@@ -6,7 +6,7 @@ h1,h2,h3,h4,p,a {
   margin: 0;
 }
 p {
-  filter: blur(0.2rem);
+  // filter: blur(0.2rem);
 	color: rgb(0,255,0);
 	transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
@@ -17,13 +17,10 @@ p:hover {
 	filter: blur(0.5rem);
 }
 a {
-  filter: blur(0.2rem);
+  filter: blur(0.1rem);
 	color: rgb(0,255,0);
 	transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-	border: solid rgb(0,255,0);
-  border-radius: 50%;
-	text-decoration: none;
 }
 a:hover {
   cursor: pointer;
@@ -41,7 +38,7 @@ h1:hover {
   cursor: pointer;
 	filter: blur(0.8rem);
 }
-#header {
+#niklaus {
 	transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
@@ -49,12 +46,11 @@ h1:hover {
 	transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
-
 @media (max-width: 640px) {
 	h1 {
 		filter: blur(0.2rem);
 	}
 	a,p {
-		filter: blur(0.11rem);
+		filter: blur(0.07rem);
 	}
 }
